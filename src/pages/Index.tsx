@@ -14,17 +14,6 @@ const Index = () => {
       history.scrollRestoration = 'manual';
     }
 
-    // Smooth scroll polyfill for older browsers
-    const smoothScrollPolyfill = () => {
-      if (!('scrollBehavior' in document.documentElement.style)) {
-        import('smoothscroll-polyfill').then((smoothscroll) => {
-          smoothscroll.polyfill();
-        });
-      }
-    };
-
-    smoothScrollPolyfill();
-
     // Add intersection observer for animations
     const observerOptions = {
       threshold: 0.1,
