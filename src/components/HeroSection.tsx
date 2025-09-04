@@ -7,7 +7,7 @@ const HeroSection = () => {
   const stats = [
     { icon: Users, value: '500+', label: 'Clientes Atendidos' },
     { icon: Package, value: '1000+', label: 'Produtos Disponíveis' },
-    { icon: Truck, value: '24h', label: 'Entrega Rápida' },
+    { icon: Truck, value: 'Rápida', label: 'Entrega' },
     { icon: Star, value: '5.0', label: 'Avaliação Média' }
   ];
 
@@ -91,7 +91,7 @@ const HeroSection = () => {
                 {/* Floating Cards */}
                 <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground p-4 rounded-xl shadow-xl animate-float" style={{ animationDelay: '1s' }}>
                   <div className="text-sm font-medium">Entrega</div>
-                  <div className="text-2xl font-bold">24h</div>
+                  <div className="text-2xl font-bold">Rápida</div>
                 </div>
                 
                 <div className="absolute -bottom-4 -left-4 bg-accent text-accent-foreground p-4 rounded-xl shadow-xl animate-float" style={{ animationDelay: '3s' }}>
